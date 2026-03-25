@@ -264,6 +264,12 @@ pnpm format
 
 插件开发文档将在后续完善，敬请期待。
 
+## 📚 技术文档
+- [官网文档](https://dreamingai.exmay.com/docs)
+- [用户指南](https://dreamingai.exmay.com/docs/README)
+- [快速开始](https://dreamingai.exmay.com/docs/quickstart)
+- [开发指南](https://dreamingai.exmay.com/docs/dev-guide)
+
 ## 💻 代码托管
 - GitHub：[https://github.com/gitcoffee-os/dreamingai](https://github.com/gitcoffee-os/dreamingai)
 - Gitee：[https://gitee.com/gitcoffee-os/dreamingai](https://gitee.com/gitcoffee-os/dreamingai)

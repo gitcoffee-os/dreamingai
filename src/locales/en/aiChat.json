@@ -1,9 +1,9 @@
 {
   "title": "AI Chat",
-  "subtitle": "Intelligent conversation with SeekFlow",
+  "subtitle": "Intelligent conversation with {botName}",
   "back": "Back",
   "conversations": "Conversations",
-  "welcomeTitle": "Welcome to SeekFlow",
+  "welcomeTitle": "Welcome to {botName}",
   "welcomePreview": "Start a conversation with AI assistant",
   "newConversation": "New conversation created",
   "newConversationBtn": "New Conversation",

@@ -1,9 +1,9 @@
 {
   "title": "AI 对话",
-  "subtitle": "与 SeekFlow 进行智能对话",
+  "subtitle": "与 {botName} 进行智能对话",
   "back": "返回",
   "conversations": "会话历史",
-  "welcomeTitle": "欢迎使用 SeekFlow",
+  "welcomeTitle": "欢迎使用 {botName}",
   "welcomePreview": "开始与 AI 助手的对话",
   "newConversation": "已创建新会话",
   "newConversationBtn": "新会话",

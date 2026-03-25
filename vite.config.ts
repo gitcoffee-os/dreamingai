@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
   const isFastBuild = mode === 'fast'
   
   return {
+    base: '/ai/',
     plugins: [vue()],
     resolve: {
       alias: {
@@ -68,8 +69,7 @@ export default defineConfig(({ mode }) => {
           }
         }
       },
-      assetsDir: 'assets',
-      base: '/'
+      assetsDir: 'assets'
     },
     server: {
       port: 5173,
