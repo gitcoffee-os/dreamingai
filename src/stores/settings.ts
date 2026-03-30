@@ -52,8 +52,8 @@ export const useSettingsStore = defineStore('settings', {
   }),
   
   getters: {
-    // 计算用户是否登录 - 临时注释登录校验，总是返回已登录状态
-    getIsLoggedIn: (state) => true, // !!state.userInfo.nickname,
+    // 计算用户是否登录
+    getIsLoggedIn: (state) => !!state.userInfo.nickname,
     // 获取用户信息
     getUserInfo: (state) => state.userInfo,
     // 获取应用设置
