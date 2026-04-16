@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://dreamingai.exmay.com/docs/images/dreamingai_logo.svg" alt="DreamingAI Logo" width="150" height="150" />
   <br />
-  <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">🤖 DreamingAI 企业级 AI 助手与智能协作平台 v1.0.2</h1>
+  <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">🤖 DreamingAI 企业级 AI 助手与智能协作平台 v1.0.3</h1>
   <h3>企业级 AI 助手应用，多模型智能助手与协作平台、企业智能协作新引擎！</h3>
   <p>🤖 多模型平台支持 • 🧠 智能体管理 • 🌐 MCP 协作 • 📝 提示词管理 • 🔌 插件扩展</p>
   <p align="center">

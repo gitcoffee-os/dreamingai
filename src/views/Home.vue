@@ -15,7 +15,12 @@
  */
 
 <template>
-  <AiChat />
+  <AiChat
+    :is-logged-in="settingsStore.isLoggedIn"
+    :user-info="settingsStore.userInfo"
+    @login="handleLogin"
+    @logout="handleLogout"
+  />
 </template>
 
 <script setup lang="ts">
@@ -23,13 +28,26 @@ import { AiChat } from '@gitcoffee/chatbot-ui';
 import { APP_INFO } from '../config/config';
 import { useAppStore } from '@gitcoffee/app';
 import { onMounted } from 'vue';
+import { useSettingsStore } from '../stores';
 
 // 使用应用状态
 const appStore = useAppStore();
+const settingsStore = useSettingsStore();
 
-// 在组件挂载时设置应用信息
+// 处理登录
+const handleLogin = () => {
+  settingsStore.login();
+};
+
+// 处理登出
+const handleLogout = async () => {
+  await settingsStore.logout();
+};
+
+// 在组件挂载时设置应用信息并初始化设置
 onMounted(() => {
   appStore.updateAppInfo(APP_INFO);
+  settingsStore.initialize();
 });
 </script>
 

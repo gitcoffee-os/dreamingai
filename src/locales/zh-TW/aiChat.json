@@ -16,5 +16,9 @@
   "translatePrompt": "請將以下內容翻譯為中文：",
   "codeHelp": "代碼幫助",
   "codeHelpPrompt": "請幫助我解決以下代碼問題：",
-  "actionApplied": "已應用 {action} 操作"
+  "actionApplied": "已應用 {action} 操作",
+  "notLoggedIn": "未登錄",
+  "profile": "個人資料",
+  "settings": "系統設置",
+  "logout": "退出登錄"
 }

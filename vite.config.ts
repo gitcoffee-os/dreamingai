@@ -59,13 +59,21 @@ export default defineConfig(({ mode }) => {
           format: 'es', // 使用ES模块格式
           inlineDynamicImports: false,
           // 配置代码分割
-          manualChunks: isFastBuild ? undefined : {
-            // 将第三方依赖打包到单独的 chunk
-            vendor: ['vue', 'vue-router', 'pinia', 'ant-design-vue'],
-            // 将国际化相关代码打包到单独的 chunk
-            i18n: ['vue-i18n'],
-            // 将 UI 组件打包到单独的 chunk
-            ui: ['@gitcoffee/search-ui', '@gitcoffee/chatbot-ui']
+          manualChunks: isFastBuild ? undefined : (id: string) => {
+            if (!id.includes('node_modules')) return;
+            const maps: [string, string][] = [
+              ['@gitcoffee/api', 'gitcoffee-api'],
+              ['@gitcoffee/chatbot-ui', 'gitcoffee-ui'],
+              ['@gitcoffee/search-ui', 'gitcoffee-ui'],
+              ['vue-i18n', 'i18n'],
+              ['vue', 'vendor'],
+              ['vue-router', 'vendor'],
+              ['pinia', 'vendor'],
+              ['ant-design-vue', 'vendor']
+            ];
+            for (const [keyword, chunk] of maps) {
+              if (id.includes(keyword)) return chunk;
+            }
           }
         }
       },
@@ -74,6 +82,7 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 5173,
       open: false,
+      allowedHosts: ['dreamingai.exmay.com'],
       // 开发服务器优化
       fs: {
         strict: false

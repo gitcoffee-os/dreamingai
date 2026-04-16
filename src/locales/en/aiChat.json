@@ -16,5 +16,9 @@
   "translatePrompt": "Please translate the following content into English:",
   "codeHelp": "Code Help",
   "codeHelpPrompt": "Please help me solve the following code problem:",
-  "actionApplied": "{action} applied"
+  "actionApplied": "{action} applied",
+  "notLoggedIn": "Not Logged In",
+  "profile": "Profile",
+  "settings": "System Settings",
+  "logout": "Logout"
 }

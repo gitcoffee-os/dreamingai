@@ -50,6 +50,7 @@ import zhSearch from './zh/search.json';
 import zhSetting from './zh/setting.json';
 
 // 注册 dreamingai项目特定的语言消息到核心i18n
+// 注意：aiChat 命名空间会与 @gitcoffee/chatbot-ui 的翻译合并，dreamingai 的键值优先级更高
 // 英文消息
 registerProjectMessages('dreamingai', 'en', {
   aiChat: enAiChat,
